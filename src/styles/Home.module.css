@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 5vh;
   padding: 6rem;
   min-height: 100vh;
 }
@@ -41,9 +42,11 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(5, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  align-content: center;
+  justify-content: center;
 }
 
 .card {
@@ -57,7 +60,10 @@
 .card span {
   display: inline-block;
   transition: transform 200ms;
+  color: #E31937;
 }
+
+
 
 .card h2 {
   font-weight: 600;
